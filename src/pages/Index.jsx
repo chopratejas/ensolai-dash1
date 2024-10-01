@@ -11,10 +11,10 @@ const Index = () => {
       <main className="flex-grow container mx-auto px-4 py-12">
         <section className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-            EnsolAI: Unlock Your Speaking Potential
+            Become a Thought Leader
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-300">
-            Discover opportunities, create abstracts, and apply with ease.
+            Discover opportunities to speak at conferences, or judge hackathons.
           </p>
           <CTAButton>Get Started <ArrowRight className="ml-2 h-5 w-5" /></CTAButton>
         </section>
@@ -28,7 +28,7 @@ const Index = () => {
           <div className="bg-gray-800 rounded-lg p-8 shadow-lg transform hover:scale-105 transition-transform duration-300">
             <Award className="h-12 w-12 text-purple-400 mb-4" />
             <h2 className="text-2xl font-semibold mb-4">Judging Positions</h2>
-            <p className="text-gray-300">Discover hackathons and competitions looking for experienced judges.</p>
+            <p className="text-gray-300">Discover hackathons looking for experienced judges with one-click apply.</p>
           </div>
           <div className="bg-gray-800 rounded-lg p-8 shadow-lg transform hover:scale-105 transition-transform duration-300">
             <FileText className="h-12 w-12 text-green-400 mb-4" />
@@ -37,8 +37,8 @@ const Index = () => {
           </div>
           <div className="bg-gray-800 rounded-lg p-8 shadow-lg transform hover:scale-105 transition-transform duration-300">
             <MousePointer className="h-12 w-12 text-yellow-400 mb-4" />
-            <h2 className="text-2xl font-semibold mb-4">One-Click Apply</h2>
-            <p className="text-gray-300">Streamline your application process with our efficient one-click system.</p>
+            <h2 className="text-2xl font-semibold mb-4">One-Click Apply for Hackathons</h2>
+            <p className="text-gray-300">Streamline your application process for judging hackathons with our efficient one-click system.</p>
           </div>
         </section>
 
@@ -55,6 +55,7 @@ const Index = () => {
             <CTAButton>Subscribe Now <ArrowRight className="ml-2 h-5 w-5" /></CTAButton>
             <p className="mt-4 text-sm text-gray-400">First 50 users get 20% off with coupon code</p>
           </div>
+          <p className="mt-6 text-xl text-gray-300">Pro Plan coming soon with enhanced features!</p>
         </section>
 
         <section className="mb-16">
@@ -89,7 +90,7 @@ const Index = () => {
         </section>
 
         <section className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Elevate Your Career?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Grow as a Thought Leader?</h2>
           <p className="text-xl mb-8 text-gray-300">
             Join thousands of professionals who've boosted their visibility and impact.
           </p>
