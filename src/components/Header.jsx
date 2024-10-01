@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex items-center">
           <Zap className="h-8 w-8 text-blue-400 mr-2" />
           <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-            OpportunityHub
+            EnsolAI
           </span>
         </div>
         <nav>
