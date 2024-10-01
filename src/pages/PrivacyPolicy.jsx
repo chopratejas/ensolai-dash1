@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
             <Header/>
             <main className="flex-grow container mx-auto px-4 py-16">
                 <div className="max-w-5xl mx-auto bg-gray-900 rounded-lg p-10 shadow-lg">
-                    <h1 className="text-5xl font-extrabold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
+                    <h1 className="text-5xl font-extrabold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
                         Privacy Policy
                     </h1>
                     <p className="text-center text-lg mb-10 text-gray-300">
@@ -45,7 +45,7 @@ const PrivacyPolicy = () => {
                     </ul>
 
                     {/* Section 2 */}
-                    <h2 className="text-4xl font-bold text-purple-400 mb-4">2. How We Use Your Information</h2>
+                    <h2 className="text-4xl font-bold text-blue-400 mb-4">2. How We Use Your Information</h2>
                     <p className="mb-6 text-gray-400 leading-relaxed">
                         We use the collected information for various purposes, including:
                     </p>
@@ -61,7 +61,7 @@ const PrivacyPolicy = () => {
                     </ul>
 
                     {/* Section 3 */}
-                    <h2 className="text-4xl font-bold text-green-400 mb-4">3. How We Share Your Information</h2>
+                    <h2 className="text-4xl font-bold text-blue-400 mb-4">3. How We Share Your Information</h2>
                     <p className="mb-6 text-gray-400 leading-relaxed">
                         We may share your information under these circumstances:
                     </p>
@@ -82,7 +82,7 @@ const PrivacyPolicy = () => {
                     </ul>
 
                     {/* Section 4 */}
-                    <h2 className="text-4xl font-bold text-yellow-400 mb-4">4. Data Security</h2>
+                    <h2 className="text-4xl font-bold text-blue-400 mb-4">4. Data Security</h2>
                     <p className="mb-6 text-gray-400 leading-relaxed">
                         We take data security seriously and use industry-standard measures to protect your information.
                         These include:
@@ -98,7 +98,7 @@ const PrivacyPolicy = () => {
                     </p>
 
                     {/* Section 5 */}
-                    <h2 className="text-4xl font-bold text-red-400 mb-4">5. Your Rights and Choices</h2>
+                    <h2 className="text-4xl font-bold text-blue-400 mb-4">5. Your Rights and Choices</h2>
                     <p className="mb-6 text-gray-400 leading-relaxed">
                         You have rights concerning your personal information, including:
                     </p>
@@ -122,14 +122,14 @@ const PrivacyPolicy = () => {
                     </p>
 
                     {/* Section 6 */}
-                    <h2 className="text-4xl font-bold text-indigo-400 mb-4">6. Cookies and Tracking Technologies</h2>
+                    <h2 className="text-4xl font-bold text-blue-400 mb-4">6. Cookies and Tracking Technologies</h2>
                     <p className="mb-6 text-gray-400 leading-relaxed">
                         We use cookies and similar technologies to enhance your browsing experience. You can manage your
                         cookie preferences through your browser settings.
                     </p>
 
                     {/* Section 7 */}
-                    <h2 className="text-4xl font-bold text-pink-400 mb-4">7. Children's Privacy</h2>
+                    <h2 className="text-4xl font-bold text-blue-400 mb-4">7. Children's Privacy</h2>
                     <p className="mb-6 text-gray-400 leading-relaxed">
                         Our services are not intended for children under 13. We do not knowingly collect personal data
                         from children under 13. If we learn that we have, we will promptly delete such information. If
@@ -138,21 +138,21 @@ const PrivacyPolicy = () => {
                     </p>
 
                     {/* Section 8 */}
-                    <h2 className="text-4xl font-bold text-teal-400 mb-4">8. Data Retention</h2>
+                    <h2 className="text-4xl font-bold text-blue-400 mb-4">8. Data Retention</h2>
                     <p className="mb-6 text-gray-400 leading-relaxed">
                         We retain personal data as long as necessary to provide our services, fulfill legal obligations,
                         and resolve disputes.
                     </p>
 
                     {/* Section 9 */}
-                    <h2 className="text-4xl font-bold text-orange-400 mb-4">9. Changes to this Privacy Policy</h2>
+                    <h2 className="text-4xl font-bold text-blue-400 mb-4">9. Changes to this Privacy Policy</h2>
                     <p className="mb-6 text-gray-400 leading-relaxed">
                         We may update this Privacy Policy periodically. Any changes will be communicated through our
                         website or via email notifications. Please review the policy regularly.
                     </p>
 
                     {/* Section 10 */}
-                    <h2 className="text-4xl font-bold text-cyan-400 mb-4">10. Contact Us</h2>
+                    <h2 className="text-4xl font-bold text-blue-400 mb-4">10. Contact Us</h2>
                     <p className="mb-6 text-gray-400 leading-relaxed">
                         If you have any questions about this Privacy Policy, please reach out to us at <span
                         className="text-blue-400">goeb1app@gmail.com</span>.
