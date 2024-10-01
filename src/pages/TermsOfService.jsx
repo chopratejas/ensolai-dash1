@@ -12,7 +12,7 @@ const TermsOfService = () => {
                         Terms of Service
                     </h1>
                     <p className="text-center text-lg mb-10 text-gray-300">
-                        Last updated: <span className="text-blue-400">[Date]</span>
+                        Last updated: <span className="text-blue-400">30th Sept, 2024</span>
                     </p>
 
                     <p className="mb-6 text-gray-400 leading-relaxed">
