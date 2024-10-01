@@ -1,5 +1,6 @@
 import React from 'react';
 import { Zap } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -13,10 +14,10 @@ const Header = () => {
         </div>
         <nav>
           <ul className="flex space-x-6">
-            <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Features</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Pricing</a></li>
-            <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+            <li><Link to="/" className="text-gray-300 hover:text-white transition-colors">Home</Link></li>
+            <li><Link to="/faq" className="text-gray-300 hover:text-white transition-colors">FAQ</Link></li>
+            <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
+            <li><Link to="/terms-of-service" className="text-gray-300 hover:text-white transition-colors">Terms of Service</Link></li>
           </ul>
         </nav>
       </div>
