@@ -16,7 +16,7 @@ const Index = () => {
                     <p className="text-xl md:text-2xl mb-8 text-gray-300">
                         Discover opportunities to speak at conferences, or judge hackathons.
                     </p>
-                    <a href="https://ensol.ai" className="inline-block">
+                    <a href="https://app.ensol.ai" className="inline-block">
                         <CTAButton>
                             Get Started <ArrowRight className="ml-2 h-5 w-5"/>
                         </CTAButton>
@@ -73,7 +73,7 @@ const Index = () => {
                                 </li>
                             </ul>
 
-                            <a href="https://ensol.ai" className="inline-block">
+                            <a href="https://app.ensol.ai" className="inline-block">
                                 <CTAButton>
                                     Subscribe Now <ArrowRight className="ml-2 h-5 w-5"/>
                                 </CTAButton>
@@ -148,7 +148,7 @@ const Index = () => {
                     <p className="text-xl mb-8 text-gray-300">
                         Join thousands of professionals who've transformed their careers through thought leadership.
                     </p>
-                    <a href="https://ensol.ai" className="inline-block">
+                    <a href="https://app.ensol.ai" className="inline-block">
                         <CTAButton>
                             Start Your Journey <ArrowRight className="ml-2 h-5 w-5"/>
                         </CTAButton>
