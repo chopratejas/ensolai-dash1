@@ -78,8 +78,8 @@ const Index = () => {
                                     Subscribe Now <ArrowRight className="ml-2 h-5 w-5"/>
                                 </CTAButton>
                             </a>
-                            <p className="mt-4 text-sm text-gray-400">First 50 users get 20% off for first month with
-                                coupon code: 8dpc5NJ2</p>
+                            <p className="mt-4 text-sm text-gray-400">First 50 users get 10% off for first month with
+                                coupon code: WELCOME10</p>
                         </div>
                         <div className="bg-gray-800 rounded-lg p-8 shadow-lg border-2 border-purple-500">
                             <h3 className="text-2xl font-semibold mb-4">Pro Plan (Coming Soon)</h3>
