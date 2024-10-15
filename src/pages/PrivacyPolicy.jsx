@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
                     </p>
 
                     <p className="mb-6 text-gray-400 leading-relaxed">
-                        At EnsolAI ("we," "us," or "our"), part of GoEB1 L.L.C., we are committed to protecting your
+                        At Ensol ("we," "us," or "our"), part of GoEB1 L.L.C., we are committed to protecting your
                         privacy.
                         This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when
                         you visit

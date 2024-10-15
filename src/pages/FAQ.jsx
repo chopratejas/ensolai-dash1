@@ -15,25 +15,25 @@ const FAQ = () => {
                     {/* FAQ Item */}
                     <div
                         className="bg-gray-800 rounded-lg shadow-lg p-6 hover:bg-gray-700 transition-colors duration-300">
-                        <h2 className="text-3xl font-semibold mb-3 text-blue-400">What is EnsolAI?</h2>
+                        <h2 className="text-3xl font-semibold mb-3 text-blue-400">What is Ensol?</h2>
                         <p>
-                            EnsolAI is a platform designed to help professionals elevate their careers by providing
+                            Ensol is a platform designed to help professionals elevate their careers by providing
                             access to
                             speaking opportunities at conferences, judging positions at hackathons, and tools to
                             streamline the
                             application process. Whether you're looking to share your expertise on a global stage or
                             take your
-                            thought leadership to the next level, EnsolAI connects you to the right opportunities.
+                            thought leadership to the next level, Ensol connects you to the right opportunities.
                         </p>
                     </div>
 
                     {/* FAQ Item */}
                     <div
                         className="bg-gray-800 rounded-lg shadow-lg p-6 hover:bg-gray-700 transition-colors duration-300">
-                        <h2 className="text-3xl font-semibold mb-3 text-purple-400">How does EnsolAI help me become a
+                        <h2 className="text-3xl font-semibold mb-3 text-purple-400">How does Ensol help me become a
                             thought leader?</h2>
                         <p>
-                            EnsolAI curates opportunities for you to speak at conferences, judge hackathons, and
+                            Ensol curates opportunities for you to speak at conferences, judge hackathons, and
                             contribute to media
                             like podcasts. By leveraging these high-impact engagements, you can enhance your visibility
                             in your field
@@ -45,7 +45,7 @@ const FAQ = () => {
                     <div
                         className="bg-gray-800 rounded-lg shadow-lg p-6 hover:bg-gray-700 transition-colors duration-300">
                         <h2 className="text-3xl font-semibold mb-3 text-green-400">What are the main features of
-                            EnsolAI?</h2>
+                            Ensol?</h2>
                         <ul className="list-disc pl-6 space-y-2">
                             <li>Find speaking engagements at top conferences.</li>
                             <li>Discover hackathons looking for judges and apply with just one click.</li>
@@ -103,7 +103,7 @@ const FAQ = () => {
                         <h2 className="text-3xl font-semibold mb-3 text-pink-400">How do I know which conferences and
                             hackathons are relevant to me?</h2>
                         <p>
-                            EnsolAI tailors its recommendations based on your professional profile and interests. You'll
+                            Ensol tailors its recommendations based on your professional profile and interests. You'll
                             see
                             opportunities that match your expertise and industry, ensuring you apply for the events that
                             are most
@@ -117,7 +117,7 @@ const FAQ = () => {
                         <h2 className="text-3xl font-semibold mb-3 text-orange-400">Is there a free trial
                             available?</h2>
                         <p>
-                            Yes! EnsolAI offers a limited free trial of 7 days for users to explore the platform before
+                            Yes! Ensol offers a limited free trial of 7 days for users to explore the platform before
                             committing to a
                             subscription. You can experience some of our core features and decide if it’s the right fit
                             for your
