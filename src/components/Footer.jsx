@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="flex items-center mb-4 md:mb-0">
             <Zap className="h-6 w-6 text-blue-400 mr-2" />
             <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-              Ensol
+              EnsolAI
             </span>
           </div>
           <nav className="mb-4 md:mb-0">

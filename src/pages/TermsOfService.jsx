@@ -16,7 +16,7 @@ const TermsOfService = () => {
                     </p>
 
                     <p className="mb-6 text-gray-400 leading-relaxed">
-                        These Terms of Service ("Terms") govern your access to and use of the Ensol website and
+                        These Terms of Service ("Terms") govern your access to and use of the EnsolAI website and
                         services (collectively, the "Service"). By using the Service, you agree to be bound by these
                         Terms. If you do not agree to these Terms, do not use the Service.
                     </p>
@@ -86,7 +86,7 @@ const TermsOfService = () => {
                     <h2 className="text-4xl font-bold text-blue-400 mb-4">7. Intellectual Property</h2>
                     <p className="mb-6 text-gray-400 leading-relaxed">
                         All content and materials available through the Service, including but not limited to text,
-                        graphics, logos, and software, are the property of Ensol or its licensors and are protected by
+                        graphics, logos, and software, are the property of EnsolAI or its licensors and are protected by
                         copyright, trademark, and other intellectual property laws. You may not reproduce, distribute,
                         or create derivative works based on any content from the Service without our prior written
                         consent.
@@ -113,7 +113,7 @@ const TermsOfService = () => {
                     {/* Section 10 */}
                     <h2 className="text-4xl font-bold text-blue-400 mb-4">10. Limitation of Liability</h2>
                     <p className="mb-6 text-gray-400 leading-relaxed">
-                        To the fullest extent permitted by law, Ensol and its affiliates, officers, directors,
+                        To the fullest extent permitted by law, EnsolAI and its affiliates, officers, directors,
                         employees, and agents shall not be liable for any indirect, incidental, special, consequential,
                         or punitive damages, including but not limited to loss of profits, data, or other intangible
                         losses, arising from or related to your use of or inability to use the Service.
@@ -130,7 +130,7 @@ const TermsOfService = () => {
                     {/* Section 12 */}
                     <h2 className="text-4xl font-bold text-blue-400 mb-4">12. Indemnification</h2>
                     <p className="mb-6 text-gray-400 leading-relaxed">
-                        You agree to indemnify, defend, and hold harmless Ensol, its affiliates, and their respective
+                        You agree to indemnify, defend, and hold harmless EnsolAI, its affiliates, and their respective
                         officers, directors, employees, and agents from and against any claims, liabilities, damages,
                         judgments, awards, losses, costs, expenses, or fees arising out of or related to your violation
                         of these Terms or your use of the Service.
@@ -150,7 +150,7 @@ const TermsOfService = () => {
                     <h2 className="text-4xl font-bold text-blue-400 mb-4">14. Miscellaneous</h2>
                     <ul className="list-disc pl-6 mb-8 text-gray-300 space-y-2">
                         <li><strong>Entire Agreement:</strong> These Terms, along with our Privacy Policy, constitute
-                            the entire agreement between you and Ensol regarding the use of the Service.
+                            the entire agreement between you and EnsolAI regarding the use of the Service.
                         </li>
                         <li><strong>Severability:</strong> If any provision of these Terms is found to be unenforceable
                             or invalid, the remaining provisions will remain in full force and effect.
