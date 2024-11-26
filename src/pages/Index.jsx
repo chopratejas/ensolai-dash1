@@ -5,14 +5,14 @@ import CTAButton from '../components/CTAButton';
 import {ArrowRight, Mic, Award, FileText, MousePointer, Zap, Users, PenTool, BarChart2, Share2} from 'lucide-react';
 
 const Index = () => {
-    const [isFirstTime, setIsFirstTime] = useState(true); // Default to first-time visitor
+    const [isFirstTime, setIsFirstTime] = useState(false); // Default to first-time visitor
 
     // Check localStorage to determine if it's the user's first time
     useEffect(() => {
         const firstTime = localStorage.getItem('isFirstTime');
         if (!firstTime) {
             localStorage.setItem('isFirstTime', 'false');
-            setIsFirstTime(true); // First-time visitor
+            setIsFirstTime(false); // First-time visitor
         } else {
             setIsFirstTime(false); // Returning visitor
         }
@@ -73,8 +73,8 @@ const Index = () => {
                         <div
                             className="bg-gray-800 rounded-lg p-8 shadow-lg transform hover:scale-105 transition-transform duration-300">
                             <Award className="h-12 w-12 text-purple-400 mb-4"/>
-                            <h2 className="text-2xl font-semibold mb-4">Judging Positions</h2>
-                            <p className="text-gray-300">Discover hackathons looking for experienced judges with
+                            <h2 className="text-2xl font-semibold mb-4">Judging & Peer-Reviews</h2>
+                            <p className="text-gray-300">Discover hackathons and Journals looking for experienced judges with
                                 one-click apply.</p>
                         </div>
                         <div
@@ -87,9 +87,8 @@ const Index = () => {
                         <div
                             className="bg-gray-800 rounded-lg p-8 shadow-lg transform hover:scale-105 transition-transform duration-300">
                             <MousePointer className="h-12 w-12 text-yellow-400 mb-4"/>
-                            <h2 className="text-2xl font-semibold mb-4">One-Click Apply for Hackathons</h2>
-                            <p className="text-gray-300">Streamline your application process for judging hackathons with
-                                our efficient one-click system.</p>
+                            <h2 className="text-2xl font-semibold mb-4">Featured Media</h2>
+                            <p className="text-gray-300">Provide your take on your topic of expertise in media articles</p>
                         </div>
                     </section>
 
@@ -104,10 +103,10 @@ const Index = () => {
                                         className="h-5 w-5 text-blue-400 mr-2"/> All current features
                                     </li>
                                     <li className="flex items-center mb-2"><Zap
-                                        className="h-5 w-5 text-blue-400 mr-2"/> Unlimited opportunities
+                                        className="h-5 w-5 text-blue-400 mr-2"/> Exclusive opportunities just for EnsolAI members
                                     </li>
                                     <li className="flex items-center"><Zap
-                                        className="h-5 w-5 text-blue-400 mr-2"/> AI-powered abstracts
+                                        className="h-5 w-5 text-blue-400 mr-2"/> AI-powered profile optimization
                                     </li>
                                 </ul>
                                 <a href="https://app.ensol.ai" className="inline-block">
@@ -124,10 +123,10 @@ const Index = () => {
                                         className="h-5 w-5 text-purple-400 mr-2"/> All Basic Plan features
                                     </li>
                                     <li className="flex items-center mb-2"><Zap
-                                        className="h-5 w-5 text-purple-400 mr-2"/> Journal Review opportunities
+                                        className="h-5 w-5 text-purple-400 mr-2"/> Journal authorship opportunities
                                     </li>
                                     <li className="flex items-center mb-2"><Zap
-                                        className="h-5 w-5 text-purple-400 mr-2"/> Podcast and Media opportunities
+                                        className="h-5 w-5 text-purple-400 mr-2"/> Podcast opportunities
                                     </li>
                                     <li className="flex items-center"><Zap
                                         className="h-5 w-5 text-purple-400 mr-2"/> Advanced analytics and reporting
