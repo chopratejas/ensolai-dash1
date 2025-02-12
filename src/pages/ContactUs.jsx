@@ -1,9 +1,81 @@
-import React from 'react';
+// eslint-disable-next-line no-unused-vars
+import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
+import { toast } from 'sonner';
+import { emailConfig } from '../email';
+
+/**
+ * @typedef {Object} FormData
+ * @property {string} name
+ * @property {string} email
+ * @property {string} message
+ */
 
 const ContactUs = () => {
+    /** @type {[FormData, React.Dispatch<React.SetStateAction<FormData>>]} */
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    /**
+     * @param {React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>} e
+     */
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    /**
+     * @param {React.FormEvent<HTMLFormElement>} e
+     */
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        
+        if (!formData.name || !formData.email || !formData.message) {
+            toast.error('Please fill in all fields');
+            return;
+        }
+
+        setIsSubmitting(true);
+
+        try {
+            const templateParams = {
+                from_name: formData.name,
+                from_email: formData.email,
+                message: formData.message,
+                to_email: 'goeb1app@gmail.com'
+            };
+
+            await emailjs.send(
+                emailConfig.serviceId,
+                emailConfig.templateId,
+                templateParams,
+                emailConfig.publicKey
+            );
+
+            toast.success('Message sent successfully!');
+            setFormData({
+                name: '',
+                email: '',
+                message: ''
+            });
+        } catch (error) {
+            console.error('Error sending email:', error);
+            toast.error('Failed to send message. Please try again.');
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
     return (
         <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 to-gray-800 text-white">
             <Header />
@@ -13,10 +85,11 @@ const ContactUs = () => {
                         Contact Us
                     </h1>
                     <p className="text-xl text-center mb-12 text-gray-300">
-                        Have questions? We're here to help.
+                        Have questions? We are here to help.
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-12">
+                        {/* Contact Info Section */}
                         <div className="space-y-8">
                             <div className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors duration-300">
                                 <div className="flex items-center mb-4">
@@ -41,37 +114,61 @@ const ContactUs = () => {
                             </div>
                         </div>
 
+                        {/* Contact Form Section */}
                         <div className="bg-gray-800 rounded-lg p-6">
                             <h2 className="text-2xl font-semibold mb-6">Send us a message</h2>
-                            <form className="space-y-4">
+                            <form onSubmit={handleSubmit} className="space-y-4">
                                 <div>
-                                    <label className="block text-gray-300 mb-2">Name</label>
+                                    <label htmlFor="name" className="block text-gray-300 mb-2">Name</label>
                                     <input
+                                        id="name"
                                         type="text"
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={handleChange}
                                         className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-blue-400"
                                         placeholder="Your name"
+                                        required
+                                        disabled={isSubmitting}
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-gray-300 mb-2">Email</label>
+                                    <label htmlFor="email" className="block text-gray-300 mb-2">Email</label>
                                     <input
+                                        id="email"
                                         type="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
                                         className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-blue-400"
                                         placeholder="Your email"
+                                        required
+                                        disabled={isSubmitting}
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-gray-300 mb-2">Message</label>
+                                    <label htmlFor="message" className="block text-gray-300 mb-2">Message</label>
                                     <textarea
+                                        id="message"
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleChange}
                                         className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-blue-400 h-32"
                                         placeholder="Your message"
-                                    ></textarea>
+                                        required
+                                        disabled={isSubmitting}
+                                    />
                                 </div>
                                 <button
                                     type="submit"
-                                    className="w-full bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600 transition-colors duration-300"
+                                    disabled={isSubmitting}
+                                    className={`w-full ${
+                                        isSubmitting 
+                                            ? 'bg-blue-400 cursor-not-allowed' 
+                                            : 'bg-blue-500 hover:bg-blue-600'
+                                    } text-white py-3 px-6 rounded-lg transition-colors duration-300`}
                                 >
-                                    Send Message
+                                    {isSubmitting ? 'Sending...' : 'Send Message'}
                                 </button>
                             </form>
                         </div>
