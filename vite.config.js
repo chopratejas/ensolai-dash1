@@ -8,7 +8,6 @@ export default defineConfig({
   server: {
     host: "::",
     port: "8080",
-    historyApiFallback: true,
   },
   plugins: [react()],
   resolve: {
@@ -23,4 +22,6 @@ export default defineConfig({
       },
     ],
   },
+  // Add this to ensure public files are copied to build output
+  publicDir: 'public',
 });
