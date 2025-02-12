@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Header from '../components/Header';
@@ -7,15 +6,7 @@ import { Mail, MapPin } from 'lucide-react';
 import { toast } from 'sonner';
 import { emailConfig } from '../email';
 
-/**
- * @typedef {Object} FormData
- * @property {string} name
- * @property {string} email
- * @property {string} message
- */
-
 const ContactUs = () => {
-    /** @type {[FormData, React.Dispatch<React.SetStateAction<FormData>>]} */
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -23,9 +14,6 @@ const ContactUs = () => {
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    /**
-     * @param {React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>} e
-     */
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prev => ({
@@ -34,9 +22,6 @@ const ContactUs = () => {
         }));
     };
 
-    /**
-     * @param {React.FormEvent<HTMLFormElement>} e
-     */
     const handleSubmit = async (e) => {
         e.preventDefault();
         
@@ -85,11 +70,10 @@ const ContactUs = () => {
                         Contact Us
                     </h1>
                     <p className="text-xl text-center mb-12 text-gray-300">
-                        Have questions? We are here to help.
+                        Have questions? We're here to help.
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-12">
-                        {/* Contact Info Section */}
                         <div className="space-y-8">
                             <div className="bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors duration-300">
                                 <div className="flex items-center mb-4">
@@ -114,7 +98,6 @@ const ContactUs = () => {
                             </div>
                         </div>
 
-                        {/* Contact Form Section */}
                         <div className="bg-gray-800 rounded-lg p-6">
                             <h2 className="text-2xl font-semibold mb-6">Send us a message</h2>
                             <form onSubmit={handleSubmit} className="space-y-4">
