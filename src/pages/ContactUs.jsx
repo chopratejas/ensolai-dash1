@@ -30,13 +30,25 @@ const ContactUs = () => {
             return;
         }
 
+        // Basic email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(formData.email)) {
+            toast.error('Please enter a valid email address');
+            return;
+        }
+
         setIsSubmitting(true);
 
         try {
             const templateParams = {
                 from_name: formData.name,
                 from_email: formData.email,
-                message: formData.message,
+                message: `
+Message from: ${formData.name}
+Email: ${formData.email}
+
+Message:
+${formData.message}`,
                 to_email: 'goeb1app@gmail.com'
             };
 
