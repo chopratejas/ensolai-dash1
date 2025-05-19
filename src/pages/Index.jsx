@@ -116,29 +116,75 @@ const Index = () => {
                                 </a>
                             </div>
                             <div className="bg-gray-800 rounded-lg p-8 shadow-lg border-2 border-purple-500">
-                                <h3 className="text-2xl font-semibold mb-4">Pro Plan (Coming Soon)</h3>
-                                <p className="text-4xl font-bold mb-4">$99<span className="text-xl">/month</span></p>
+                                <h3 className="text-2xl font-semibold mb-4">Pro Plan</h3>
+                                <p className="text-4xl font-bold mb-4">$199<span className="text-xl">/month</span></p>
                                 <ul className="text-left mb-6">
                                     <li className="flex items-center mb-2"><Zap
                                         className="h-5 w-5 text-purple-400 mr-2"/> All Basic Plan features
                                     </li>
                                     <li className="flex items-center mb-2"><Zap
-                                        className="h-5 w-5 text-purple-400 mr-2"/> Journal authorship opportunities
+                                        className="h-5 w-5 text-purple-400 mr-2"/> Monthly 1:1 30min session for EB1A/O1/EB2NIW guidance
                                     </li>
                                     <li className="flex items-center mb-2"><Zap
-                                        className="h-5 w-5 text-purple-400 mr-2"/> Podcast opportunities
+                                        className="h-5 w-5 text-purple-400 mr-2"/> Exclusive advanced opportunities
+                                    </li>
+                                    <li className="flex items-center mb-2"><Zap
+                                        className="h-5 w-5 text-purple-400 mr-2"/> Group sessions on specific topics
                                     </li>
                                     <li className="flex items-center"><Zap
-                                        className="h-5 w-5 text-purple-400 mr-2"/> Advanced analytics and reporting
+                                        className="h-5 w-5 text-purple-400 mr-2"/> Niche identification & journal reviews workshops
                                     </li>
                                 </ul>
                                 <button
-                                    className="inline-block bg-gray-600 cursor-not-allowed text-white font-bold py-2 px-4 rounded"
-                                    disabled>
-                                    Coming Soon
+                                    onClick={() => document.getElementById('waitlist-section').scrollIntoView({ behavior: 'smooth' })}
+                                    className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">
+                                    Join Waitlist
                                 </button>
-                                <p className="mt-4 text-sm text-gray-400">Be the first to access enhanced features</p>
+                                <p className="mt-4 text-sm text-gray-400">Limited spots available - join the waitlist now</p>
                             </div>
+                        </div>
+                    </section>
+
+                    <section id="waitlist-section" className="text-center mb-16 pt-8">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6">Join the Pro Plan Waitlist</h2>
+                        <div className="max-w-md mx-auto bg-gray-800 rounded-lg p-8 shadow-lg">
+                            <p className="text-gray-300 mb-6">Be among the first to access our exclusive Pro Plan features. Enter your details below to join the waitlist.</p>
+                            <form 
+                                name="waitlist" 
+                                method="POST"
+                                data-netlify="true"
+                                netlify-honeypot="bot-field"
+                                className="space-y-4"
+                            >
+                                <input type="hidden" name="form-name" value="waitlist" />
+                                <div style={{display: 'none'}}>
+                                    <input name="bot-field" />
+                                </div>
+                                <div>
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-purple-400"
+                                        placeholder="Your name"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:border-purple-400"
+                                        placeholder="Your email"
+                                        required
+                                    />
+                                </div>
+                                <button
+                                    type="submit"
+                                    className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 px-6 rounded-lg transition-colors duration-300">
+                                    Join Waitlist
+                                </button>
+                                <p className="text-xs text-gray-400 mt-2">We'll notify you when Pro Plan spots become available.</p>
+                            </form>
                         </div>
                     </section>
 

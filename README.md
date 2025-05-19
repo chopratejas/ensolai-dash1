@@ -18,11 +18,26 @@ npm i
 npm run dev
 ```
 
+## Waitlist Functionality
+
+This project includes a waitlist feature for the Pro Plan using Netlify Forms. When users submit their information to the waitlist:
+
+1. Their information is captured by Netlify Forms
+2. Submissions can be viewed in the Netlify dashboard under the Forms section
+
+### Setting up Netlify Forms
+
+1. Deploy your site to Netlify
+2. Netlify automatically detects and enables forms with the `netlify` attribute
+3. View and manage form submissions in the Netlify dashboard
+
 ## What technologies are used for this project?
 
-This project is built with .
+This project is built with:
 
 - Vite
 - React
 - shadcn-ui
 - Tailwind CSS
+- Netlify Forms (for waitlist functionality)
+- EmailJS (for form submissions)

@@ -87,12 +87,10 @@ const FAQ = () => {
                             </h2>
                             <p className="text-gray-600 dark:text-gray-400">
                                 The Basic Plan gives you access to all essential features, including speaking opportunities,
-                                hackathon
-                                judging positions, and AI-powered abstracts. The Pro Plan, coming soon, will offer
-                                additional benefits
-                                such as journal review opportunities, media and podcast engagements, and advanced analytics
-                                to track your
-                                thought leadership growth.
+                                hackathon judging positions, and AI-powered abstracts. The Pro Plan offers additional benefits
+                                including monthly 1:1 30-minute sessions to guide you on your EB1A/O1/EB2NIW path, exclusive
+                                advanced opportunities, group sessions on specific topics, and specialized workshops for niche
+                                identification and journal reviews.
                             </p>
                         </div>
 
@@ -118,7 +116,7 @@ const FAQ = () => {
                             <p className="text-gray-600 dark:text-gray-400">
                                 Yes! EnsolAI offers a limited free trial of 7 days for users to explore the platform before
                                 committing to a
-                                subscription. You can experience some of our core features and decide if it’s the right fit
+                                subscription. You can experience some of our core features and decide if it's the right fit
                                 for your
                                 professional growth.
                             </p>
@@ -127,14 +125,13 @@ const FAQ = () => {
                         {/* FAQ Item */}
                         <div className="border-b border-gray-200 dark:border-gray-700 pb-6">
                             <h2 className="text-xl font-medium mb-3 text-gray-900 dark:text-white">
-                                How can I get early access to the Pro Plan?
+                                How can I join the Pro Plan?
                             </h2>
                             <p className="text-gray-600 dark:text-gray-400">
-                                You can join the waitlist for the Pro Plan soon. By joining the waitlist, you’ll be among
-                                the first to
-                                receive access when the Pro Plan is launched, giving you a head start on unlocking new
-                                features like
-                                journal review opportunities and advanced analytics.
+                                Due to high demand, our Pro Plan currently has limited availability. You can join the waitlist on our homepage.
+                                Pro Plan members receive monthly 1:1 sessions for EB1A/O1/EB2NIW guidance, exclusive opportunities not available
+                                in the Basic Plan, and access to group sessions on topics like niche identification and journal reviews.
+                                We'll notify you as soon as a spot becomes available.
                             </p>
                         </div>
 
