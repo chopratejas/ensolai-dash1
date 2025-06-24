@@ -10,31 +10,31 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gray-900 py-4 relative">
+    <header className="bg-white border-b border-gray-200 py-4 relative">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <Zap className="h-8 w-8 text-blue-400 mr-2" />
-            <span className="text-2xl font-bold text-white">
+            <Zap className="h-8 w-8 text-blue-600 mr-2" />
+            <span className="text-2xl font-bold text-gray-900">
               EnsolAI
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:block">
-            <ul className="flex space-x-6">
-              <li><Link to="/" className="text-gray-300 hover:text-white transition-colors">Home</Link></li>
-              <li><Link to="/faq" className="text-gray-300 hover:text-white transition-colors">FAQ</Link></li>
-              <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
-              <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
+            <ul className="flex space-x-8">
+              <li><Link to="/" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">Home</Link></li>
+              <li><Link to="/faq" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">FAQ</Link></li>
+              <li><Link to="/contact" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">Contact</Link></li>
+              <li><Link to="/privacy-policy" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">Privacy Policy</Link></li>
             </ul>
           </nav>
 
           {/* Mobile Menu Button */}
           <button 
             onClick={toggleMenu}
-            className="md:hidden text-gray-300 hover:text-white focus:outline-none"
+            className="md:hidden text-gray-600 hover:text-gray-900 focus:outline-none"
           >
             {isMenuOpen ? (
               <X className="h-6 w-6" />
@@ -46,12 +46,12 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden absolute top-full left-0 right-0 bg-gray-900 border-t border-gray-800 shadow-lg">
+          <nav className="md:hidden absolute top-full left-0 right-0 bg-white border-t border-gray-200 shadow-lg z-50">
             <ul className="px-4 py-2">
               <li>
                 <Link 
                   to="/" 
-                  className="block py-3 text-gray-300 hover:text-white transition-colors"
+                  className="block py-3 text-gray-600 hover:text-gray-900 transition-colors font-medium"
                   onClick={toggleMenu}
                 >
                   Home
@@ -60,7 +60,7 @@ const Header = () => {
               <li>
                 <Link 
                   to="/faq" 
-                  className="block py-3 text-gray-300 hover:text-white transition-colors"
+                  className="block py-3 text-gray-600 hover:text-gray-900 transition-colors font-medium"
                   onClick={toggleMenu}
                 >
                   FAQ
@@ -69,7 +69,7 @@ const Header = () => {
               <li>
                 <Link 
                   to="/contact" 
-                  className="block py-3 text-gray-300 hover:text-white transition-colors"
+                  className="block py-3 text-gray-600 hover:text-gray-900 transition-colors font-medium"
                   onClick={toggleMenu}
                 >
                   Contact
@@ -78,7 +78,7 @@ const Header = () => {
               <li>
                 <Link 
                   to="/privacy-policy" 
-                  className="block py-3 text-gray-300 hover:text-white transition-colors"
+                  className="block py-3 text-gray-600 hover:text-gray-900 transition-colors font-medium"
                   onClick={toggleMenu}
                 >
                   Privacy Policy

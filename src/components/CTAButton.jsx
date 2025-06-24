@@ -2,7 +2,7 @@ import React from 'react';
 
 const CTAButton = ({ children }) => {
   return (
-    <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 flex items-center">
+    <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 flex items-center">
       {children}
     </button>
   );

@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 py-8">
+    <footer className="bg-gray-50 border-t border-gray-200 py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center space-y-6">
           {/* Logo */}
           <div className="flex items-center">
-            <Zap className="h-6 w-6 text-blue-400 mr-2" />
-            <span className="text-xl font-bold text-white">
+            <Zap className="h-6 w-6 text-blue-600 mr-2" />
+            <span className="text-xl font-bold text-gray-900">
               EnsolAI
             </span>
           </div>
@@ -18,15 +18,15 @@ const Footer = () => {
           {/* Navigation */}
           <nav>
             <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 px-4">
-              <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/terms-of-service" className="text-gray-300 hover:text-white transition-colors">Terms of Service</Link></li>
-              <li><Link to="/faq" className="text-gray-300 hover:text-white transition-colors">FAQ</Link></li>
-              <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="/privacy-policy" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-service" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">Terms of Service</Link></li>
+              <li><Link to="/faq" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">FAQ</Link></li>
+              <li><Link to="/contact" className="text-gray-600 hover:text-gray-900 transition-colors font-medium">Contact</Link></li>
             </ul>
           </nav>
 
           {/* Copyright */}
-          <div className="text-gray-300 text-center">
+          <div className="text-gray-500 text-center text-sm">
             © 2025 GoEB1 L.L.C. All rights reserved.
           </div>
         </div>
