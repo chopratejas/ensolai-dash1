@@ -82,10 +82,13 @@ const TermsOfService = () => {
                             <h2 className="text-2xl font-semibold mb-4 text-gray-900">6. Fees and Payments</h2>
                             <p className="text-gray-600 mb-4">
                                 Certain features of the Service require a paid subscription. All fees are quoted in USD and are non-refundable.
+                                Credit card information is required during sign-up to activate your 7-day free trial.
                             </p>
                             <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                                <li>Subscription fees are charged on a monthly basis</li>
-                                <li>No refunds will be provided for any subscription payments, including accidental subscriptions or unused portions of a subscription period</li>
+                                <li>We offer a 7-day free trial period for new users</li>
+                                <li>Credit card information is required during registration for the free trial</li>
+                                <li>Subscription fees are charged on a monthly basis after the trial period</li>
+                                <li>No refunds will be provided for any monthly subscription payments, including accidental subscriptions or unused portions of a subscription period</li>
                                 <li>You authorize us to automatically charge your payment method for recurring subscription fees</li>
                                 <li>Prices may change at any time with notice</li>
                                 <li>Failure to pay fees may result in immediate service termination</li>

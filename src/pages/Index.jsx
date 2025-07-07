@@ -469,7 +469,7 @@ const Index = () => {
                                     </CTAButton>
                                 </a>
                                 <div className="text-gray-500 text-sm">
-                                    ✨ Free 7-day trial • No credit card required
+                                    ✨ Free 7-day trial
                                 </div>
                             </div>
                             

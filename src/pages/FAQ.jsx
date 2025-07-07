@@ -114,11 +114,23 @@ const FAQ = () => {
                                 Is there a free trial available?
                             </h2>
                             <p className="text-gray-600">
-                                Yes! EnsolAI offers a limited free trial of 14 days for users to explore the platform before
+                                Yes! EnsolAI offers a limited free trial of 7 days for users to explore the platform before
                                 committing to a
                                 subscription. You can experience some of our core features and decide if it's the right fit
                                 for your
                                 professional growth.
+                            </p>
+                        </div>
+
+                        {/* FAQ Item */}
+                        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                            <h2 className="text-xl font-semibold mb-3 text-gray-900">
+                                Do I need to provide credit card information during sign-up?
+                            </h2>
+                            <p className="text-gray-600">
+                                Yes, credit card information is required during the sign-up process to activate your 7-day free trial. 
+                                This ensures a seamless transition to your chosen subscription plan after the trial period ends. 
+                                You will not be charged during the trial period, and you can cancel anytime before the trial expires.
                             </p>
                         </div>
 
@@ -142,8 +154,9 @@ const FAQ = () => {
                             </h2>
                             <p className="text-gray-600">
                                 Due to the immediate access nature of our service, we cannot provide refunds for subscription payments, 
-                                including accidental subscriptions. Please review your subscription choice carefully before confirming. 
-                                You can cancel your subscription at any time to prevent future charges.
+                                including accidental subscriptions. This policy applies to all monthly subscriptions - no refunds are 
+                                available once you have subscribed for the month. Please review your subscription choice carefully 
+                                before confirming. You can cancel your subscription at any time to prevent future charges.
                             </p>
                         </div>
 
