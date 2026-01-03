@@ -15,8 +15,8 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <Zap className="h-8 w-8 text-blue-600 mr-2" />
-            <span className="text-2xl font-bold text-gray-900">
+            <Zap className="h-7 w-7 text-amber-500 mr-2" />
+            <span className="text-2xl font-serif text-gray-900">
               EnsolAI
             </span>
           </div>

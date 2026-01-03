@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 border-t border-gray-200 py-8">
+    <footer className="bg-white border-t border-gray-200 py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center space-y-6">
           {/* Logo */}
           <div className="flex items-center">
-            <Zap className="h-6 w-6 text-blue-600 mr-2" />
-            <span className="text-xl font-bold text-gray-900">
+            <Zap className="h-5 w-5 text-amber-500 mr-2" />
+            <span className="text-xl font-serif text-gray-900">
               EnsolAI
             </span>
           </div>

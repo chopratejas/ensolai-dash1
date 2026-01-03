@@ -17,6 +17,10 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['DM Sans', 'system-ui', 'sans-serif'],
+        serif: ['DM Serif Display', 'Georgia', 'serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -51,15 +55,14 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Custom colors
-        'blue-400': '#60A5FA',
-        'blue-500': '#3B82F6',
-        'blue-600': '#2563EB',
-        'purple-400': '#A78BFA',
-        'purple-600': '#7C3AED',
-        'purple-700': '#6D28D9',
+        // Custom colors - Amber accent palette (no purple!)
+        'amber-50': '#FFFBEB',
+        'amber-100': '#FEF3C7',
+        'amber-200': '#FDE68A',
+        'amber-500': '#F59E0B',
+        'amber-600': '#D97706',
+        'amber-700': '#B45309',
         'green-400': '#4ADE80',
-        'yellow-400': '#FBBF24',
       },
       borderRadius: {
         lg: "var(--radius)",

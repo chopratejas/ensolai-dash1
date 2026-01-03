@@ -4,17 +4,17 @@ import Footer from '../components/Footer';
 
 const FAQ = () => {
     return (
-        <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-50 to-gray-100">
+        <div className="min-h-screen flex flex-col bg-white">
             <Header/>
-            <main className="flex-grow container mx-auto px-4 py-12">
+            <main className="flex-grow container mx-auto px-4 py-16">
                 <div className="max-w-3xl mx-auto">
-                    <h1 className="text-4xl font-bold mb-8 text-gray-900">
+                    <h1 className="text-4xl md:text-5xl font-serif mb-12 text-gray-900">
                         Frequently Asked Questions
                     </h1>
 
                     <div className="space-y-6">
                         {/* FAQ Item */}
-                        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div className="bg-white p-6 border border-gray-200 hover:border-gray-900 transition-colors duration-200">>
                             <h2 className="text-xl font-semibold mb-3 text-gray-900">
                                 What is EnsolAI?
                             </h2>
@@ -26,7 +26,7 @@ const FAQ = () => {
                         </div>
 
                         {/* FAQ Item */}
-                        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div className="bg-white p-6 border border-gray-200 hover:border-gray-900 transition-colors duration-200">>
                             <h2 className="text-xl font-semibold mb-3 text-gray-900">
                                 How does EnsolAI help me become a thought leader?
                             </h2>
@@ -40,7 +40,7 @@ const FAQ = () => {
                         </div>
 
                         {/* FAQ Item */}
-                        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div className="bg-white p-6 border border-gray-200 hover:border-gray-900 transition-colors duration-200">
                             <h2 className="text-xl font-semibold mb-3 text-gray-900">
                                 What are the main features of EnsolAI?
                             </h2>
@@ -53,7 +53,7 @@ const FAQ = () => {
                         </div>
 
                         {/* FAQ Item */}
-                        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div className="bg-white p-6 border border-gray-200 hover:border-gray-900 transition-colors duration-200">
                             <h2 className="text-xl font-semibold mb-3 text-gray-900">
                                 How does the one-click apply for hackathons work?
                             </h2>
@@ -67,7 +67,7 @@ const FAQ = () => {
                         </div>
 
                         {/* FAQ Item */}
-                        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div className="bg-white p-6 border border-gray-200 hover:border-gray-900 transition-colors duration-200">
                             <h2 className="text-xl font-semibold mb-3 text-gray-900">
                                 How do AI-powered abstracts work?
                             </h2>
@@ -81,7 +81,7 @@ const FAQ = () => {
                         </div>
 
                         {/* FAQ Item */}
-                        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div className="bg-white p-6 border border-gray-200 hover:border-gray-900 transition-colors duration-200">
                             <h2 className="text-xl font-semibold mb-3 text-gray-900">
                                 What is the difference between the Basic and Pro Plans?
                             </h2>
@@ -95,7 +95,7 @@ const FAQ = () => {
                         </div>
 
                         {/* FAQ Item */}
-                        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div className="bg-white p-6 border border-gray-200 hover:border-gray-900 transition-colors duration-200">
                             <h2 className="text-xl font-semibold mb-3 text-gray-900">
                                 How do I know which conferences and hackathons are relevant to me?
                             </h2>
@@ -109,7 +109,7 @@ const FAQ = () => {
                         </div>
 
                         {/* FAQ Item */}
-                        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div className="bg-white p-6 border border-gray-200 hover:border-gray-900 transition-colors duration-200">
                             <h2 className="text-xl font-semibold mb-3 text-gray-900">
                                 Is there a free trial available?
                             </h2>
@@ -123,7 +123,7 @@ const FAQ = () => {
                         </div>
 
                         {/* FAQ Item */}
-                        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div className="bg-white p-6 border border-gray-200 hover:border-gray-900 transition-colors duration-200">
                             <h2 className="text-xl font-semibold mb-3 text-gray-900">
                                 Do I need to provide credit card information during sign-up?
                             </h2>
@@ -135,7 +135,7 @@ const FAQ = () => {
                         </div>
 
                         {/* FAQ Item */}
-                        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div className="bg-white p-6 border border-gray-200 hover:border-gray-900 transition-colors duration-200">
                             <h2 className="text-xl font-semibold mb-3 text-gray-900">
                                 How can I join the Elite Plan?
                             </h2>
@@ -148,7 +148,7 @@ const FAQ = () => {
                         </div>
 
                         {/* FAQ Item */}
-                        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div className="bg-white p-6 border border-gray-200 hover:border-gray-900 transition-colors duration-200">
                             <h2 className="text-xl font-semibold mb-3 text-gray-900">
                                 What happens if I accidentally subscribe?
                             </h2>
@@ -161,7 +161,7 @@ const FAQ = () => {
                         </div>
 
                         {/* FAQ Item */}
-                        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div className="bg-white p-6 border border-gray-200 hover:border-gray-900 transition-colors duration-200">
                             <h2 className="text-xl font-semibold mb-3 text-gray-900">
                                 Are the opportunities guaranteed?
                             </h2>
@@ -173,7 +173,7 @@ const FAQ = () => {
                         </div>
 
                         {/* FAQ Item */}
-                        <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div className="bg-white p-6 border border-gray-200 hover:border-gray-900 transition-colors duration-200">
                             <h2 className="text-xl font-semibold mb-3 text-gray-900">
                                 What happens when I cancel my subscription?
                             </h2>
