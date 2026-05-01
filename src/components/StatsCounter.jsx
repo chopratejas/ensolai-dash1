@@ -47,7 +47,7 @@ const StatsCounter = ({ end, duration = 2000, suffix = "", prefix = "" }) => {
   }, [isVisible, end, duration]);
 
   return (
-    <span ref={ref} className="font-bold">
+    <span ref={ref} className="font-serif text-gradient glow-text inline-block tabular-nums">
       {prefix}{count.toLocaleString()}{suffix}
     </span>
   );
